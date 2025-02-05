@@ -53,7 +53,7 @@ st.subheader("About Me")
 st.write("""
 - 🧑‍💻 I am a Big Data & Analytics Master's student 
 
-- 🛩️ prev: Banking, Retail, Consulting
+- 🛩️ Banking, Retail, Consulting
 
 - ❤️ Passionate about constantly learning new things and stepping outside my comfort zone
 
