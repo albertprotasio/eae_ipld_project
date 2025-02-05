@@ -51,17 +51,17 @@ st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a <Current Role and/or Studies> 
+- 🧑‍💻 I am a Big Data & Analytics Master's student 
 
-- 🛩️ prev: <Previous Experience, Background or Studies>
+- 🛩️ prev: Banking, Retail, Consulting
 
-- ❤️ <Your Passion and/or Interests>
+- ❤️ Passionate about constantly learning new things and stepping outside my comfort zone
 
-- 🤖 <Your Personal Projects>
+- 🤖 SQL, Python
 
-- 🏂 <Your Hobbies>
+- 🏂 Learning a foreign language, reading, sports, music
 
-- 📫 How to reach me: <Your Email>
+- 📫 How to reach me: albertprotasio.es@gmail.com
 
 - 🏠 Barcelona
 """)
