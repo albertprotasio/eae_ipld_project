@@ -38,7 +38,7 @@ with open(profile_image_file_path, "rb") as img_file:
 
 # ----- Your Profile Image -----
 st.write(f"""
-<div style="display: flex; justify-content: center; margin-left: 40px;">  <!-- Adjust the margin-left value as needed -->
+<div style="display: flex; justify-content: center; margin-left: 80px;">  <!-- Adjust the margin-left value as needed -->
     <img src="{img}" alt="Your Name" width="300" height="300" style="border-radius: 50%; object-fit: cover; margin-top: 40px; margin-bottom: 40px;">
 </div>
 """, unsafe_allow_html=True)
