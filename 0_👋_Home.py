@@ -23,12 +23,15 @@ with st.sidebar:
 st.write(f"""<div style="text-align: center;"><h1 style="text-align: center;">👋 Hi! My name is Albert</h1></div>""", unsafe_allow_html=True)  # TODO: Add your name
 
 
+import base64
+import streamlit as st
+
 # ----- Profile image file -----
-profile_image_file_path = "profile.png"       # TODO: Upload your profile image to the same folder as this script and update this if it has a different name
+profile_image_file_path = "IMG_6994 copy- (2).JPG"  # Update with the correct file path
 
+# Open the image file and encode it as base64
 with open(profile_image_file_path, "rb") as img_file:
-    img = "data:image/png;base64," + base64.b64encode(img_file.read()).decode()
-
+    img = "data:image/jpeg;base64," + base64.b64encode(img_file.read()).decode()
 
 # ----- Your Profile Image -----
 st.write(f"""
