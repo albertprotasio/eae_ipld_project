@@ -4,7 +4,7 @@ import base64
     
 # ----- Page configs (tab title, favicon) -----
 st.set_page_config(
-    page_title="<Your Name> Portfolio",
+    page_title="Albert Protasio's Portfolio",
     page_icon="📊",
 )
 
@@ -14,8 +14,8 @@ with st.sidebar:
     st.image("eae_img.png", width=200)
     st.header("Introduction to Programming Languages for Data")
     st.write("###")
-    st.write("**Final Project - Dec 2023**")
-    st.write("*Author:* <Your Name>")
+    st.write("**Final Project - March 2025**")
+    st.write("*Author:* Albert Protasio")
     st.write("*Instructor:* [Enric Domingo](https://github.com/enricd)")
 
 
@@ -39,7 +39,7 @@ st.write(f"""
 
 
 # ----- Personal title or short description -----
-current_role = "Current Role and/or Studies or Description"   # TODO: Change this
+current_role = "Assistant Key Account Manager Intern at ManoMano"   # TODO: Change this
 
 st.write(f"""<div style="text-align: center;"><h4><i>{current_role}</i></h4></div>""", unsafe_allow_html=True)
 
@@ -51,17 +51,17 @@ st.subheader("About Me")
 
 # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
 st.write("""
-- 🧑‍💻 I am a <Current Role and/or Studies>
+- 🧑‍💻 I am an Assistant Key Account Manager at ManoMano and a Master's in Big Data & Analytics student
 
-- 🛩️ prev: <Previous Experience, Background or Studies>
+- 🛩️ prev: Banking, Retail, Consulting
 
-- ❤️ <Your Passion and/or Interests>
+- ❤️ Sports, Music, Books, People
 
-- 🤖 <Your Personal Projects>
+- 🤖 My personal project is to develop myself
 
-- 🏂 <Your Hobbies>
+- 🏂 Sports, Music, Books
 
-- 📫 How to reach me: <Your Email>
+- 📫 How to reach me: albertprotasio.es@gmail.com
 
 - 🏠 Barcelona
 """)
