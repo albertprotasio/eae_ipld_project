@@ -92,5 +92,3 @@ st.write("""
 
 - 🏠 Barcelona
 """)
-
-# Feel free to add other points like your Linkedin, Github, Social Media, etc.
