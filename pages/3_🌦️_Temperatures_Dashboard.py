@@ -147,16 +147,16 @@ plt.ylabel("Temperature (°C)")
 
 plt.legend()
     
-    c.pyplot(fig)
+c.pyplot(fig)
 
 
 
     # TODO: Make a histogram of the temperature reads of a list of selected cities, for the selected time period, 
     # every city has to be its own distribution with a different color.
 
-    fig = plt.figure(figsize=(10, 5))
+fig = plt.figure(figsize=(10, 5))
 
- for city in selected_cities:
+for city in selected_cities:
     city_df = temps_df[temps_df["City"] == city] # TODO: get a dataframe with the rows of the selected city
     city_df_period = city_df[(city_df["Date"] >= start_date) & (city_df["Date"] <= end_date)] # TODO: get a dataframe with the rows of the selected city and the selected period of time using the Date column and any of the <, >, <=, >= operators to compare with start_date and end_date
     plt.hist(city_df_period["AvgTemperatureCelsius"], bins=20, alpha=0.5, label=city) # TODO: plot each city histogram in the same plot and use the label parameter to set the legend name for each city 
@@ -167,7 +167,7 @@ plt.ylabel("Frequency")
 
 plt.legend()
 
-    c.pyplot(fig)
+c.pyplot(fig)
 
 
 
