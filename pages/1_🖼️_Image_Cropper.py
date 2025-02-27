@@ -70,7 +70,7 @@ else:
 
 # TODO: Ex. 1.3: Crop the image array img_arr using the crop_min_h, crop_max_h, crop_min_w and crop_max_w values -----
 
-    crop_arr = img_arr[crop_min_h:crop_max_h, crop_min_w:crop_max_w]
+crop_arr = img_arr[crop_min_h:crop_max_h, crop_min_w:crop_max_w]
 
 
 # ----- Displaying the cropped image and creating a download button to download the image -----
