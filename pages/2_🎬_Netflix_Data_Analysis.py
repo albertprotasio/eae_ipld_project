@@ -103,15 +103,15 @@ st.write("##")
 st.header("Avg Duration of Movies by Year")
 
 # TODO: Ex 2.7: Make a line chart of the average duration of movies (not TV shows) in minutes for every year across all the years. 
-movies_df_movies = movies_df[movies_df['type'] == 'Movie']  # Filter only movies
-movies_avg_duration_per_year = movies_df_movies.groupby('release_year')['duration'].mean()
+movies_df_movies = movies_df[movies_df['type'] == 'Movie'].copy()
+movies_df_movies['duration'] = movies_df_movies['duration'].str.extract('(\d+)').astype(float)
 
-plt.plot(movies_avg_duration_per_year.index, movies_avg_duration_per_year.values)
+movies_avg_duration_per_year = movies_df_movies.groupby('release_year')['duration'].mean()
 
 if movies_avg_duration_per_year is not None:
     fig = plt.figure(figsize=(9, 6))
 
-    # plt.plot(...# TODO: generate the line plot using plt.plot() and the information from movies_avg_duration_per_year (the vertical axes with the minutes value) and its index (the horizontal axes with the years)
+    plt.plot(movies_avg_duration_per_year.index, movies_avg_duration_per_year.values, marker='o', linestyle='-')
 
     plt.title("Average Duration of Movies Across Years")
 
