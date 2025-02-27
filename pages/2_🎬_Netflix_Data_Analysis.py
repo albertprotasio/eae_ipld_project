@@ -37,6 +37,8 @@ def load_data():
 
 
 movies_df = load_data()
+st.cache_data.clear()  # Clears cache to reload fresh data
+
 
 # Displaying the dataset in a expandable table
 with st.expander("Check the complete dataset:"):
